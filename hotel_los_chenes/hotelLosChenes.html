@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hotel Los Chenes</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="with-device-with, initial- scale-1"> <!-- tipo de tamaño estamos entrando al sitio, agarra ancho del dispositivo, con la escala 1 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="type/icons.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="dist/css/video-js.css">
+	<script src="dist/js/video.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/estilos.css">
+	<META HTTP-EQUIV="Refresh" CONTENT="10000"> 
+<style>
+	/*Hotel Los Chenes*/
+	/*xcn xkc xcn xcnsfmvdfdnfvjkn
+	
+	/*Css pertenece a relleno*/
+	.container{
+		padding: 80px 120px;
+
+	} 
+	/*Css pertenece a estilos de Boton circulo*/
+	.person {
+		border: 5px solid transparent;
+		border-radius: 90px;
+		margin-bottom: 25px;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+	.person:hover {
+	  border-color: #705101;
+	}
+
+	.carousel-inner img {
+	  -webkit-filter: grayscale(90%);
+	  filter: grayscale(0%); /* make all photos black and white */
+	  width: 100%; /* Set width to 100% */
+	  margin: auto;
+	}
+	/*Css pertenece a estilos carrusel*/
+	.carousel-caption h3 {
+	  color: #fff !important;
+	  border-color: #ffffff;
+	  text-shadow: 2px 2px 4px black;
+	}
+	.carousel-caption p {
+		text-shadow: 2px 2px 4px black;
+		font-size: 16px;
+	}
+
+	@media (max-width: 600px) {
+	  .carousel-caption {
+	    display: none; /* Ocultar el texto del carrusel cuando la pantalla tiene menos de 600 píxeles de ancho */
+	  }
+	}
+
+	 /*Css pertenece clase personalizada*/
+	.bg-1 {
+	  background: #4E4227;
+	  
+	}
+		.bg-1 h3 {color: #fff;}
+		.bg-1 p {font-style: italic;
+	}
+	.list-group-item:first-child {
+
+	  border-top-right-radius: 0;
+	  border-top-left-radius: 0;
+	}
+
+	.list-group-item:last-child {
+
+	  border-bottom-right-radius: 0;
+	  border-bottom-left-radius: 0;
+	}
+
+/* Remove border and add padding to thumbnails */
+	.thumbnail {
+	  padding: 0 0 15px 0;
+	  border: none;
+	  border-radius: 0;
+	}
+
+	.thumbnail p {
+	  margin-top: 0px;
+	  color: #555;
+	}
+
+/* Black buttons with extra padding and without rounded borders */
+	.btn { 
+		padding: 10px 20px;
+		background-color: #333;
+		color: #f1f1f1;
+		border-radius: 0;
+		transition: .2s;
+
+	}
+	/* On hover, the color of .btn will transition to white with black text */
+	.btn:hover, .btn:focus {
+	  border: 1px solid #333;
+	  background-color: #fff;
+	  color: #000;
+	}
+	.modal-header, h4, .close {
+	  background-color: #333;
+	  color: #fff !important;
+	  text-align: center;
+	  font-size: 30px;
+	}
+
+	.modal-header, .modal-body {
+	  padding: 40px 50px;
+	}
+	 
+	.nav-tabs li a {
+	  color: #777;
+	}
+		/* Add a dark background color with a little bit see-through */
+	.navbar {
+	  margin-bottom: 0;
+	  background-color: #2d2d30;
+	  border: 0;
+	  font-size: 13px !important;
+	  letter-spacing: 4px;
+	  opacity: 0.9;
+	}
+
+	/* Add a gray color to all navbar links */ 
+	.navbar li a, .navbar .navbar-brand { 
+	  color: #d5d5d5 !important;
+	}
+	 
+	/* On hover, the links will turn white */
+	.navbar-nav li a:hover {
+	  color: #fff !important;
+	}
+
+	/* The active link */
+	.navbar-nav li.active a {
+	  color: #fff !important;
+	  background-color:#4E4227!important;
+	}
+
+	/* Remove border color from the collapsible button */
+	.navbar-default .navbar-toggle {
+	  border-color: transparent;
+	}
+
+	/* Dropdown */
+	.open .dropdown-toggle {
+	  color: #fff ;
+	  background-color: #555 !important;
+	}
+
+	/* Dropdown links */
+	.dropdown-menu li a {
+	  color: #000 !important;
+	}
+
+	/* On hover, the dropdown links will turn red */
+	.dropdown-menu li a:hover {
+	  background-color: red !important; 
+	} 
+
+	.jumbotron h2 {
+  		border-color: #ffffff;
+  		color: #00000;
+  		text-align: center;
+	    font-size: 25px;
+  	}
+
+  	.r1 {
+  		color: #ffffff;
+  	}
+
+	footer {
+	  background-color: #2d2d30;
+	  color: #f5f5f5;
+	  padding: 32px;
+	}
+
+	footer a {
+	  color: #f5f5f5;
+	}
+
+	footer a:hover {
+	  color: #777;
+	  text-decoration: none;
+	}
+
+
+</style>
+</head>
+
+<body  id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!-- Barra de navegación -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+
+	      </button>
+	      <br>
+	      <img src="Imagenes/lc.png" class="img" alt="lc" width="50" height="50">
+	      <a class="navbar-brand" href="#">Hotel Los Chenes</a>
+	      
+	    </div>
+	    <br>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#myCarousel">INICIO</a></li>
+	        <li><a href="#servicios">SERVICIOS</a></li>
+	        <li><a href="#reservaciones">RESERVACIONES</a></li>
+	        <li><a href="#cnm">CONÓCENOS</a></li>
+	        <li><a href="#contact">CONTACTO</a></li>
+	        <li class="dropdown"> 
+	          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MÁS
+	            <span class="caret"></span>
+	          </a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#Ubicacion">Ubicación</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="#"><span class="#"></span></a></li>
+	      </ul>
+	    </div>
+	  </div>
+	  <br>
+	</nav> 
+	<!-- Termina Barra de navegación -->
+
+	<!--Inicia Carrusel-->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  		<!--Indicadores -->
+  		<ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		    <li data-target="#myCarousel" data-slide-to="3"></li>
+		 </ol>
+
+ <!-- Envoltorio para diapositivas -->
+		<div class="carousel-inner" role =" listbox">
+			<div class="item active">
+					
+						<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" autoplay muted loop style="width: 100%" id="fm-video">
+							<source src="videos/vc1.mp4" type="video/mp4">
+						</video>
+			</div>
+
+			<div class="item">
+				<img src="Imagenes/vd02.jpg" alt="Vista Dia">
+				<div class="carousel-caption">
+					<h3>SIMPLE Y ORGÁNICO</h3>
+					<p>Conectado con la naturaleza que crea un espacio relajado y elegante.</p>
+				</div>
+			</div>
+
+
+			<div class="item">
+				<img src="Imagenes/vn222.jpg" alt="Vista Noche">
+				<div class="carousel-caption">
+					<h3>ESTACIONAMIENTO</h3>
+					<p>Amplio estacionamiento ubicado cerca de las habitaciones.</p>
+					
+				</div>
+				
+			</div>
+
+			
+			
+
+			<div class="item">
+				<img src="Imagenes/vn333.jpg" alt="Vista Noche">
+				<div class="carousel-caption">
+					<h3>SyV</h3>
+					<p>Vigilancia de 24 hrs para la seguridad de sus vehículos.</p>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+<!-- Controles izquierdo y derecho -->
+
+		<a  class="left carousel-control" href=" #myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    	<span class="sr-only">Next</span>
+ 		 </a>
+ 	</div>
+ 	<!--Finaliza Carrusel-->
+
+ 	<!----Jumbotron--->
+		<div class="jumbotron">
+			<h2>Hotel Los Chenes</h2>
+			<p class="lema text-center">¡Bienvenido a tus sueños, pues gracias a ello, pasarán grandes cosas!</p>	
+		</div>
+
+
+	<div id="servicios" class="container text-center">
+		<h3>Durante su estancia</h3>
+		<p> <em>Estamos comprometidos con su comodidad.</em></p>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<p><strong>Antes de iniciar el día...</strong></p><br>
+				<a href="#demo" data-toggle="collapse">
+				<img src="Imagenes/Cafe.jpg" class="img-circle person" alt="cafe" width="255" height="255">
+				</a>
+				<div id="demo" class="collapse">
+				      <p>Disfrute de Pan con Café caliente.</p>
+				      <p>Ofrecemos un alimento ligero para comenzar el día sin algún costo.</p>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+	      		<p><strong>Transporte...</strong></p><br>
+	      		<a href="#demo2" data-toggle="collapse">
+	      		<img src="Imagenes/trans.jpg" class="img-circle person" alt="transporte" width="255" height="255">
+	      		</a>
+	      		<div id="demo2" class="collapse">
+			      <p>Vehículo.</p>
+			      <p>Ofrecemos un vehículo si requiere trasladarse por la ciudad.</p>
+			    </div>
+
+	    	</div>
+	    	<div class="col-sm-4">
+      			<p><strong>Tours...</strong></p><br>
+      			<a href="#demo3" data-toggle="collapse">
+      			<img src="Imagenes/tours.png" class="img-circle person" alt="tour" width="255" height="255">
+      			</a>
+     			<div id="demo3" class="collapse">
+			      <p>Conoce la ciudad.</p> 
+			      <p>Ofrecemos un paseo por el centro de la ciudad y zonas arqueológicas cercanas.</p>
+			    </div>
+   			</div>
+		</div>
+	</div>
+
+
+
+ 	<div id="reservaciones" class="bg-1"> 
+	 	<div class="container">
+	 		<div class="r1">
+	 			<h3 class="text-center">¡SU COMODIDAD ES IMPORTANTE!</h3>
+		    	<p class="text-center">"Aquel que quiere viajar <strong>feliz</strong> debe viajar <strong>ligero</strong>"</p>
+		      	<p class="text-center">¡Haga su reservación Ya!</p>
+	 		</div>
+		   
+
+		    <ul class="list-group">
+		    	<li class="list-group-item text-center"><strong>Disponibles</strong></li>
+		        <li class="list-group-item">Habitación sencilla <span class="label label-danger">¡Agotado!</span></li>
+  				<li class="list-group-item">Habitación doble <span class="label label-primary">Disponibles</span><span class="badge">3</span></li>
+  				<li class="list-group-item">Departamentos <span class="label label-danger">¡Agotado!</span></li>
+
+		    </ul>
+
+		    <div class="text-center">
+
+				<div class="row">
+		    	<div class="col-sm-4">
+		    <div class="thumbnail">
+		    	<a href="#ha1" data-toggle="collapse">
+		    		<img src="Imagenes/hs.jpg" class="img person" title="Click para mostrar detalles." alt="Habitacion Sencilla">
+		    	</a>
+
+		    	<div id="ha1" class="collapse">
+				      <p>Cuenta con: </p>
+				      <table class="table table-dark table-hover table-striped">
+				      	<tbody>
+				      		<tr>
+				      			<td> Televisión por cable</td>
+				      			<td> 1 cama tamaño matrimonial</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Servicio de Café</td>
+				      			<td> Aire acondicionado</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Ventilador</td>
+				      			<td> Internet</td>
+				      		</tr>
+				      	</tbody>
+				      </table>
+				</div>
+		      
+		      <p><strong>Habitación sencilla</strong></p>
+		      <li class="list-group-item text-center" >Precio por día</li>
+		      <li class="list-group-item">Facturado  <span class="badge">$319.78</span></li>
+		      	<br>
+  			  <li class="list-group-item">Sin factura <span class="badge">$297.39</span></li>
+  				<br>
+		      <p>2019 - 2020</p>
+		      <button class="btn" data-toggle="modal" data-target="#myModal">Reservar</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4><span class="fa fa-calendar-check-o"></span> Reservaciones</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form role="form">
+					          <div class="form-group">
+					            <label for="psw"><span class="fa fa-calendar"></span> Fecha de Estadía </label>
+					           <!--Calendario-->
+
+
+					          </div>
+					  
+					          <button type="submit" class="btn btn-block">Confirmar
+					            <span class="glyphicon glyphicon-ok"></span>
+					          </button>
+					        </form>
+					      </div>
+					      <div class="modal-footer"> 
+					        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+					          <span class="glyphicon glyphicon-remove"></span> Cancelar
+					        </button>
+					        <br>
+					        <p><span class="glyphicon glyphicon-phone"></span> Teléfono: +52 996 100 45 01</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				<!-- Modal A qui termina -->
+		    </div>
+		</div>
+
+		<div class="col-sm-4">
+		    <div class="thumbnail">
+		    	<a href="#ha2" data-toggle="collapse">
+		    		<img src="Imagenes/1(2).jpg" class="img person" title="Click para mostrar detalles." alt="Habitacion Sencilla">
+		    	</a>
+
+		    	<div id="ha2" class="collapse">
+				      <p>Cuenta con: </p>
+				      <table class="table table-dark table-hover table-striped">
+				      	<tbody>
+				      		<tr>
+				      			<td> Televisión por cable</td>
+				      			<td> 2 camas tamaño matrimonial</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Servicio de Café</td>
+				      			<td> Aire acondicionado</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Ventilador</td>
+				      			<td> Internet</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Frigobar</td>
+				      			<td> </td>
+				      		</tr>
+				      	</tbody>
+				      </table>
+				</div>
+		      
+		      <p><strong>Habitación Doble</strong></p>
+		      <li class="list-group-item text-center" >Precio por día</li>
+		      	<li class="list-group-item">Facturado  <span class="badge">$413.00</span></li>
+		      	<br>
+  				<li class="list-group-item">Sin factura <span class="badge">$384.09</span></li>
+  				<br>
+		      <p>2019 - 2020</p>
+		      <button class="btn" data-toggle="modal" data-target="#myModal">Reservar</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4><span class="fa fa-calendar-check-o"></span> Reservaciones</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form role="form">
+					          <div class="form-group">
+					            <label for="psw"><span class="fa fa-calendar"></span> Fecha de Estadía </label>
+					           <!--Calendario-->
+
+
+					          </div>
+					  
+					          <button type="submit" class="btn btn-block">Confirmar
+					            <span class="glyphicon glyphicon-ok"></span>
+					          </button>
+					        </form>
+					      </div>
+					      <div class="modal-footer"> 
+					        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+					          <span class="glyphicon glyphicon-remove"></span> Cancelar
+					        </button>
+					        <br>
+					        <p><span class="glyphicon glyphicon-phone"></span> Teléfono: +52 996 100 45 01</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				<!-- Modal A qui termina -->
+		    </div>
+		</div>
+
+		<div class="col-sm-4">
+		    <div class="thumbnail">
+		    	<a href="#ha3" data-toggle="collapse">
+		    		<img src="Imagenes/hs.jpg" class="img person" title="Click para mostrar detalles." alt="Habitacion Sencilla">
+		    	</a>
+
+		    	<div id="ha3" class="collapse">
+				      <p>Cuenta con: </p>
+				      <table class="table table-dark table-hover table-striped">
+				      	<tbody>
+				      		<tr>
+				      			<td> Televisión por cable</td>
+				      			<td> 1 cama tamaño matrimonial</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Servicio de Café</td>
+				      			<td> Aire acondicionado</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Ventilador</td>
+				      			<td> Internet</td>
+				      		</tr>
+				      		<tr>
+				      			<td> Refrigerador</td>
+				      			<td> Estufa</td>
+				      		</tr>
+				      	</tbody>
+				      </table>
+				</div>
+		      
+		      <p><strong>Departamento</strong></p>
+		        <li class="list-group-item text-center" >Precio por mes</li>
+		      	<li class="list-group-item">Facturado  <span class="badge">$2366.00</span></li>
+		      	<br>
+  				<li class="list-group-item">Sin factura <span class="badge">$2000.00</span></li>
+  				<br>
+		      <p>2019 - 2020</p>
+		      <button class="btn" data-toggle="modal" data-target="#myModal">Reservar</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4><span class="fa fa-calendar-check-o"></span> Reservaciones</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form role="form">
+					          <div class="form-group">
+					            <label for="psw"><span class="fa fa-calendar"></span> Fecha de Estadía </label>
+					           <!--Calendario-->
+
+
+					          </div>
+					  
+					          <button type="submit" class="btn btn-block">Confirmar
+					            <span class="glyphicon glyphicon-ok"></span>
+					          </button>
+					        </form>
+					      </div>
+					      <div class="modal-footer"> 
+					        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+					          <span class="glyphicon glyphicon-remove"></span> Cancelar
+					        </button>
+					        <br>
+					        <p><span class="glyphicon glyphicon-phone"></span> Teléfono: +52 996 100 45 01</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				<!-- Modal A qui termina -->
+		    </div>
+		</div>
+
+
+		    </div>
+			</div>
+		 </div>
+	</div>
+
+	
+	
+
+	  
+	  <!-- Pestañas conmutables 
+	  		Inicia Conocenos-->
+	<div id="cnm" class="container">
+		<h3 class="text-center" id="cms">Conócenos</h3>
+	<ul class="nav nav-tabs">
+	   <li><a data-toggle="tab" href="#menu1">Fotos</a></li>
+	  <li><a data-toggle="tab" href="#menu2">Videos</a></li>
+	</ul>
+
+	<div class="tab-content">
+	 	 
+	  <div id="menu1" class="tab-pane fade in active ">
+	    <h2>El mejor lugar para hospedarse.</h2>
+	    <p> Dejando una sonrisa de satisfacción al cliente.</p>
+
+	    <div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="Imagenes/f1.jpeg" width="100%" height="100%">
+					<br>
+					<br>
+
+				</div>
+				<div class="col-sm-4">
+					<img src="Imagenes/f2.jpeg" width="100%" height="100%">
+					<br>
+					<br>
+				</div>
+				<div class="col-sm-4">
+					<img src="Imagenes/f3.jpeg" width="100%" height="100%">
+					<br>
+					<br>
+				</div>
+				<div class="col-sm-4">
+					<img src="Imagenes/f4.jpeg" width="100%" height="100%">
+					
+				</div>
+				<div class="col-sm-4">
+					<img src="Imagenes/f6.jpeg" width="100%" height="100%">
+				</div>
+
+				<div class="col-sm-4">
+					<img src="Imagenes/f7.jpeg" width="100%" height="100%">
+				</div>
+					
+			</div>
+	</div>
+	  </div>
+	 
+	  <div id="menu2" class="tab-pane fade">
+		    
+		<h2>El mejor hotel de la ciudad.</h2>
+	    <p>¡No busques mas!</p>
+				<!--
+<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls width="" id="fm-video">
+					<source src="videos/vid.mp4" type="video/mp4">
+				</video>
+				-->
+				<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" autoplay muted loop style="width: 100%" id="fm-video">
+							<source src="videos/vc1.mp4" type="video/mp4">
+				</video>
+			
+	  </div>
+	</div>
+<!-- Termina Pestañas conmutables -->
+	</div>
+	<!--Termina CONOCENOS-->
+
+	<!-- contenedor de CONTACTO -->
+	<div id="contact" class="container">
+<h3 class="text-center"><strong>Contacto</strong></h3>
+
+
+	  <p class="text-center"><em>¡Envíenos sus comentarios para mejorar nuestro servicio!</em></p>
+	  <div class="row test">
+	    <div class="col-md-4">
+	      <p>Escribenos </p>
+	      <p><span class="glyphicon glyphicon-map-marker"></span> Hopelchén, Campeche, México</p>
+	      <p><span class="glyphicon glyphicon-phone"></span> Teléfono: +52 996 100 45 01</p>
+	      <p><span class="glyphicon glyphicon-envelope"></span> Correo: rafael_ramirez1952@hotmail.com</p>
+	    </div>
+	    <div class="col-md-8">
+	      <div class="row">
+	        <div class="col-sm-6 form-group">
+	          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+	        </div>
+	        <div class="col-sm-6 form-group">
+	          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+	        </div> 
+	      </div>
+	      <textarea class="form-control" id="comments" name="comments" placeholder="Comentarios" rows="5"></textarea>
+	      <div class="row">
+	        <div class="col-md-12 form-group">
+	          <button class="btn pull-right" type="submixt">Enviar</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!--Ubicación-->
+
+	  <div id="Ubicacion">
+	  	<br><br><br><br><br>
+		  <p class="text-center"><em>¡Encuéntrenos aquí!</em></p>
+		 <div class="container-fluid">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1596344064815!2d-89.85610238508832!3d19.7483711867057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f57faa896a40001%3A0x4e9bc232948fe6b4!2sHOTEL%20LOS%20CHENES!5e0!3m2!1ses-419!2smx!4v1569819155006!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+	</div>
+	</div> 
+	<!-- Termina contenedor de contactos -->
+	
+
+
+
+	<!-- Pie de página -->
+
+	<footer class="text-center">
+	  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Hasta Arriba">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a><br><br>
+	  <p>"Desarrollado por alumnos del séptimo semestre del <a href="http://itshopelchen.edu.mx/portal/" data-toggle="tooltip" title="Visitar página">ITS Hopelchén</a>"</p>
+	</footer>
+	<!-- Termina Pie de página -->
+	<!--Navbar movimiento lento-->
+	<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+$('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script> 
+
+<!--Velocidad de carrusel-->
+ <script>
+  $('.carousel').carousel({
+   interval: 9000
+  });
+ </script>  
+
+</body>
+</html>
